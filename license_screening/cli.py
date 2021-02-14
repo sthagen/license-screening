@@ -5,6 +5,8 @@
 import os
 import sys
 
+from license_screening.license_screening import main as process_trees
+
 DEBUG = os.getenv("LICENSE_SCREENING_DEBUG")
 
 
@@ -14,3 +16,4 @@ def main(argv=None):
     argv = sys.argv[1:] if argv is None else argv
     verbose = True if "-v" in argv or "--verbose" in argv else False
     DEBUG and print(f"Not yet implemented")
+    process_trees(argv)
