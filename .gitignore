@@ -131,3 +131,6 @@ dmypy.json
 # Local dev ignores
 *~
 .idea
+
+# Local output ignores
+license_assessment-GPL_via-*_v0.json
