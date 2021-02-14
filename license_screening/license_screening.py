@@ -100,6 +100,11 @@ def hash_size(path_string, get_size=os.path.getsize):
     return sha256_hash.hexdigest(), get_size(path)
 
 
+def parse(thing):
+    """Connect the dots ... later (TODO)."""
+    return NotImplemented
+
+
 def main(argv=None):
     """Drive the detection, assessment, and aggregation."""
     argv = sys.argv[1:] if argv is None else argv
