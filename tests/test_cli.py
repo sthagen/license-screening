@@ -17,3 +17,8 @@ def test_main_nok_wrong_type_intng():
     message = r"argument of type 'int' is not iterable"
     with pytest.raises(TypeError, match=message):
         cli.main(bad)
+
+
+def test_main_ok_known_tree():
+    job = ['["tests/data"]']
+    assert cli.main(job) is None
