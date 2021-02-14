@@ -203,6 +203,3 @@ def main(argv=None):
         json.dump(report, handle, indent=2)
 
     return 0
-
-
-sys.exit(main(sys.argv[1:]))
