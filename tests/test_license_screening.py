@@ -2,6 +2,8 @@
 # pylint: disable=missing-docstring,unused-import,reimported
 import pytest  # type: ignore
 
+import tests.context as ctx
+
 import license_screening.license_screening as lis
 
 
